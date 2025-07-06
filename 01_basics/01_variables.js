@@ -1,7 +1,11 @@
-const accountId = 144553
-let accountEmail = "hitesh@google.com"
+const accountId = 144553 /*A const remains unchanged until the end of its block scope */
+
+let accountEmail = "hitesh@google.com" /* Used to declare a variable that can be changed (reassigned).Block scoped (only available inside the {} it's declared in). */
+
 var accountPassword = "12345"
-accountCity = "Jaipur"
+
+accountCity = "Jaipur" /*we can create variables without declaring keywords*/
+
 let accountState;
 
 // accountId = 2 // not allowed
@@ -20,4 +24,3 @@ because of issue in block scope and functional scope
 
 
 console.table([accountId, accountEmail, accountPassword, accountCity, accountState])
-// this is a sample comment Selection furtheer modification
