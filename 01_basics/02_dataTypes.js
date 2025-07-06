@@ -18,13 +18,12 @@ let state;
 // bigint
 // string => ""
 // boolean => true/false
-// null => standalone value
-// undefined => 
-// symbol => unique
+// null => standalone value / is representation of empty valu
+// undefined => variable define kr diye hai lekin value nhe diye hai
+// symbol => uniqueness find krna k liye use ata hai
 
 
 // object
 
 console.log(typeof undefined); // undefined
 console.log(typeof null); // object
-// this is also a sample comment
