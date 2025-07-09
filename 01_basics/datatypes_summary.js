@@ -1,7 +1,7 @@
 // kis tra say data memory mai store hota hai aur kis tra se data ko access kr skta ho... in basis pr     categorization ho rkhi hai data ke
 
 //  Primitive (call by value ->> copy mai changes hoti hai)
-// js is dynamically typed
+// js is dynamically typed language
 
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
@@ -42,13 +42,13 @@ console.log(typeof anotherId);
 
 // **************************************************************************************
 
-// Stack (Primitive), Heap (Non-Primitive)
+// Stack (Primitive), Heap (Non-Primitive) memory
 
 let myYoutubename = "hiteshchoudharydotcom"
 let anothername = myYoutubename;
 anothername = "chaiaurcode"
-console.log (myYoutubename);
-console.log(anothername);
+console.log (myYoutubename); /*hiteshchoudharydotcom */
+console.log(anothername); /*chaiaurcode */
 
 // heap
 
