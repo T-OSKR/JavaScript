@@ -58,7 +58,7 @@ let str3 = str1 + str2
 // console.log( (3 + 4) * 5 % 3);
 
 // console.log(+true);  in this, The + in front is not addition. It’s a unary plus operator.It tries to convert the value into a number. (+true  →  Number(true)  →  1 )
-// console.log(+"");
+// console.log(+""); --> 0
 
 let num1, num2, num3
 
