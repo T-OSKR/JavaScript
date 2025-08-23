@@ -1,9 +1,9 @@
-// kis tra say data memory mai store hota hai aur kis tra se data ko access kr skta ho... in basis pr     categorization ho rkhi hai data ke
+// kis tra say data memory mai store hota hai aur kis tra se data ko access kr skta ho... in basis pr categorization ho rkhi hai data ke
 
 //  Primitive (call by value ->> copy mai changes hoti hai)
-// js is dynamically typed language
+// js is dynamically typed language  
 
-//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+//  7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
 
 const score = 100
 const scoreValue = 100.3
@@ -36,13 +36,14 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof anotherId);
+console.log(typeof anotherId); /* symbol */
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
 
 // **************************************************************************************
 
 // Stack (Primitive), Heap (Non-Primitive) memory
+// Stack (Primitive) --> copy, Heap (Non-Primitive) --> change orignal value (memory)
 
 let myYoutubename = "hiteshchoudharydotcom"
 let anothername = myYoutubename;
@@ -60,3 +61,5 @@ let userTwo = userOne
 userTwo.email = "hitesh@google.com"
 // console.log(userOne.email); --> hitesh@google.com
 // console.log(userOne.email); --> hitesh@google.com
+
+

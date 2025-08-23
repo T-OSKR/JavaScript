@@ -22,15 +22,18 @@ If both values are strings, JavaScript does string comparison (based on Unicode 
 If the values are different types, JavaScript converts both to numbers, then compares.
 
 Strings compared directly (no coercion to numbers):
-console.log("5" < "10"); // false → because it's string comparison
+console.log("5" < "10"); false → because it's string comparison
 // "5" comes after "1" in Unicode, so "5" > "10" as strings
+// "5" → first character is '5' (Unicode: 53)
+"10" → first character is '1' (Unicode: 49)
+Since '5' (53) is greater than '1' (49), "5" < "10" evaluates to false.
 
 Different types → Coercion to numbers:
 console.log("5" < 10);    // ✅ true → "5" becomes 5 → 5 < 10
 console.log(true < 2);    // ✅ true → true becomes 1 → 1 < 2
 console.log(null < 1);    // ✅ true → null becomes 0 → 0 < 1
 
-Non-numeric strings → NaN:
+Non-numeric strings ("abc123, sdf") → NaN:
 Any comparison with NaN is always false, even NaN < NaN
 console.log("abc" < 10);  // false → "abc" → NaN → NaN < 10 → false
 */
@@ -40,6 +43,16 @@ console.log(undefined > 0);
 console.log(undefined < 0);
 // undefined will always gives false output for the operations.
 // null is only loosely equal to undefined, and not equal to any number, string, or boolean.
+/*
+Loose equality (==)
+
+null == undefined → true ✅
+
+null == 0 → false
+
+null == false → false
+
+null == "" → false */
 
 // === 
 
@@ -55,6 +68,7 @@ JavaScript does the conversion on its own.
 "5" - 1    // 4      (string "5" is coerced to number)
 true + 1   // 2      (true becomes 1)
 null + 1   // 1      (null becomes 0)
+
 2. Explicit Coercion (Manual)
 You convert it yourself using functions like Number(), String(), etc.
 
@@ -81,4 +95,5 @@ null == undefined  // true
 null == 0          // false
 
 Objects and Primitives:
+
 If one value is an object (including arrays) and the other is a primitive (like a string or number), JavaScript tries to convert the object to a primitive value (often by calling the object's valueOf() or toString() methods) before doing the comparison. */

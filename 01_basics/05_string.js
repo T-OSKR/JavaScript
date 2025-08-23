@@ -1,26 +1,30 @@
 const name = "hitesh"
 const repoCount = 50
 
-// console.log(name + repoCount + " Value");
+// console.log(name + repoCount + " Value");  --> hitesh50 value
 
 console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);
 
-const gameName = new String('hitesh-hc-com')
+const gameName = new String('hitesh-hc-com') /* another way to declare strings */
 
-// console.log(gameName[0]);
-// console.log(gameName.__proto__);
+// console.log(gameName[0]);  --> h
+// console.log(gameName.__proto__);  --> {}
 
 
 // console.log(gameName.length);
-// console.log(gameName.toUpperCase());
+// console.log(gameName.toUpperCase());  --> it doesn't change original string, it changes in stack memory
 console.log(gameName.charAt(2));
 console.log(gameName.indexOf('t'));
 
-const newString = gameName.substring(0, 4)
+const newString = gameName.substring(0, 4)  /*zero values not alloweded */
 console.log(newString);
 
-const anotherString = gameName.slice(-8, 4)
-console.log(anotherString);
+const anotherString = gameName.slice(-5, 4)
+console.log(anotherString); /*
+start → inclusive index
+end → exclusive index
+If start is negative, JavaScript converts it to:
+string.length + start */
 
 const newStringOne = "   hitesh    "
 console.log(newStringOne);
