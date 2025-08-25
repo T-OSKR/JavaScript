@@ -1,16 +1,25 @@
 const score = 400
-// console.log(score);
+ console.log(score);
 
 const balance = new Number(100)
-// console.log(balance);
+ console.log(balance);
 
-// console.log(balance.toString().length);
+ console.log(balance.toString().length);
 // console.log(balance.toFixed(1));  --> gives one character after decimal
 
 const otherNumber = 123.8966
 
 // console.log(otherNumber.toPrecision(4));  --> give roundoff value and return fix length of nos. acc to precision (123.9) 
 // If the number has more digits than n, it will round off.
+// digits → total number of significant digits (1–21).
+// Returns a string representation of the number.
+
+/*
+Look at the next digit after the last significant digit you want.
+If it’s 5 or more → the last digit is rounded up.
+If it’s less than 5 → the last digit stays the same.
+If needed, rounding can carry over (like 9.99 → 1.00e+1).
+ */
 
 const hundreds = 1000000
 // console.log(hundreds.toLocaleString('en-IN'));   --> 10,00,000
