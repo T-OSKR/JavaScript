@@ -22,7 +22,7 @@ let myTimeStamp = Date.now()
 // That number means: How many milliseconds have passed since 1970-01-01T00:00:00Z
 
 // console.log(myCreatedDate.getTime());  -->  e.g. 12346890244  (Timestamp of that specific Date object)  -- it will be applied on Date object
-// console.log(Math.floor(Date.now()/1000));  --> time in seconds
+// console.log(Math.floor(Date.now()/1000));  --> time in seconds.
 
 let newDate = new Date()
 console.log(newDate);

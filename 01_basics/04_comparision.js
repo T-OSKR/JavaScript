@@ -44,7 +44,7 @@ console.log(undefined < 0);
 // undefined will always gives false output for the operations.
 // null is only loosely equal to undefined, and not equal to any number, string, or boolean.
 /*
-Loose equality (==)
+Loose equality (==).
 
 null == undefined → true ✅
 

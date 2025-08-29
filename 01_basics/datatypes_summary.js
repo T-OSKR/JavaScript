@@ -51,7 +51,7 @@ anothername = "chaiaurcode"
 console.log (myYoutubename); /*hiteshchoudharydotcom */
 console.log(anothername); /*chaiaurcode */
 
-// heap
+// heap.
 
 let userOne = {
     email: "user@google.com",

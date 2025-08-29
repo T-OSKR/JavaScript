@@ -20,7 +20,7 @@ console.log(newString);
 
 const anotherString = gameName.slice(-5, 4)
 console.log(anotherString); /*
-start → inclusive index
+start → inclusive index.
 end → exclusive index
 If start is negative, JavaScript converts it to:
 string.length + start */

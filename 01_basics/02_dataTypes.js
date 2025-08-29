@@ -17,7 +17,7 @@ let state;
 // number => 2 to power 53
 // bigint
 // string => ""
-// boolean => true/false
+// boolean => true/false.
 // null => standalone value / is representation of empty valu
 // undefined => variable define kr diye hai lekin value nhe diye hai
 // symbol => uniqueness find krna k liye use ata hai

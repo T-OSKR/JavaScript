@@ -26,7 +26,7 @@ const hundreds = 1000000
 
 // +++++++++++++ Maths +++++++++++++++++++++++++++++
 
-// console.log(Math); --> Object [Math] {}-->properties not functions
+// console.log(Math); --> Object [Math] {}-->properties not functions.
 // console.log(Math.abs(-4));  --> changes only neg value to positive
 // console.log(Math.round(4.2)); --> gives roundoff value as normal (4) 
 // console.log(Math.ceil(4.2)); --> gives always upper roundoff value (5)
