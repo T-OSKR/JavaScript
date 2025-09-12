@@ -1,4 +1,4 @@
-// const tinderUser = new Object()  --> this is singleton onject  {}--> empty object
+// const tinderUser = new Object()  --> this is singleton object  {}--> empty object
 const tinderUser = {} // this is non singelton object
 
 tinderUser.id = "123abc"
@@ -24,10 +24,10 @@ const obj2 = {3: "a", 4: "b"}
 const obj4 = {5: "a", 6: "b"}
 
 // const obj3 = { obj1, obj2 }
-// console.log(obj3)  -->  { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
-// const obj3 = Object.assign({}, obj1, obj2, obj4)  -->  (target, source)
+// console.log(obj3)  //-->  { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
+// const obj3 = Object.assign({}, obj1, obj2, obj4) // -->  (target, source) -->  { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }
 
-// const obj3 = {...obj1, ...obj2}
+// const obj3 = {...obj1, ...obj2} //spread operator  -- creates new object
 // console.log(obj3);
 
 
@@ -47,15 +47,17 @@ const users = [
     },
 ]
 
-users[1].email
-// console.log(tinderUser);
+// users[1].email
+//  console.log(tinderUser);
 
-// console.log(Object.keys(tinderUser));  -->  output values datatype is Array
+// console.log(Object.keys(tinderUser));  //--> [ 'id', 'name', 'isLoggedIn' ]  -> output values datatype is Array
 // console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));  -->  Array k andr array milta hai first value is key and other is value
+// console.log(Object.entries(tinderUser));  //--> [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ] - Array k andr array milta hai first value is key and other is value
 
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'));  --> hasOwnProperty - to check the value in the object
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));  // true --> hasOwnProperty - to check the value in the object
 
+
+// ++++++++++++++++++++++++++++++++++++
 
 const course = {
     coursename: "js in hindi",
@@ -67,12 +69,13 @@ const course = {
 
 // Destructuring
 const {courseInstructor: instructor} = course
-const {coursename} = course
+const {coursename: cn} = course
 
-//console.log(courseInstructor);
-//console.log(instructor);
-console.log(coursename);
+// console.log(courseInstructor);
+console.log(instructor);
+console.log(cn);
 
+// json
 // {
 //     "name": "hitesh",
 //     "coursename": "js in hindi",

@@ -1,7 +1,7 @@
 // singleton
-// Object.create  --> constructor method k through  
+// Object.create --> (constructor method k through)  Creates multiple instances based on blueprint  
 
-// object literals
+// object literals  --> to create single object directly using {}
 
 const mySym = Symbol("key1")
 
@@ -36,5 +36,5 @@ JsUser.greetingTwo = function(){
 }
 
 console.log(JsUser.greeting);  // function (anonymous)  function not execute only refrence is back
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+console.log(JsUser.greeting());  //  Hello JS user /n undefined
+console.log(JsUser.greetingTwo());  //  Hello JS user,  Hitesh /n undefined

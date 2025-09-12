@@ -4,9 +4,11 @@ const user = {
 
     welcomeMessage: function() {
         console.log(`${this.username} , welcome to website`);  //this can be used to refer current context - means inside {}  
-        console.log(this);
+        console.log(this);  // {
+        //                      username: 'hitesh',                     
+        //                      price: 999,
+        //                      welcomeMessage: [function: welcomeMessage] }
     }
-
 }
 
 // user.welcomeMessage()  --> hitesh , welcome to website
@@ -17,29 +19,27 @@ const user = {
 
 // function chai(){
 //     let username = "hitesh"
-//     console.log(this.username);  --> this/context can be used only in objects not in functions - it will gives undefined for (this.username)
+//     console.log(this.username);  --> this/context can be used only in objects not in functions - it will gives undefined for (this.username) but for this it will give some values
 // }
 
 // chai()
 
 // const chai = function () {
 //     let username = "hitesh"
-//     console.log(this.username);
+//     console.log(this.username);  // undefined
 // }
 
 const chai =  () => {
     let username = "hitesh"
-    console.log(this);
+    console.log(this);  //for this it will give empty {} and for this.username it will give undefined
 }
-
-
 // chai()
 
 // const addTwo = (num1, num2) => {  --> When we use curly braces we must use return keyword
 //     return num1 + num2          --> Explicit return
 // }
 
-// const addTwo = (num1, num2) =>  num1 + num2  --> implicit return
+// const addTwo = (num1, num2) =>  num1 + num2  --> implicit return   - means one line code 
 
 // const addTwo = (num1, num2) => ( num1 + num2 ) --> no use of return keyword
 
